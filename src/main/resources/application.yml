@@ -2,3 +2,11 @@ socketio:
   sever:
     hostname: 127.0.0.1
     port: 8081
+
+spring:
+  # DB 설정
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
